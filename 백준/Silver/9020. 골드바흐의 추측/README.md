@@ -4,6 +4,7 @@
 
 ### 의사코드
 
+```
 n 입력받음
 // n번 입력받는다
 for 1 ~ n-1:
@@ -19,6 +20,7 @@ def is_prime_number(a):
       if a % i == 0:   // 숫자와 i 가 나눠지면, false 반환
         return False
     return True
+```
 
 
 ### 성능 요약
