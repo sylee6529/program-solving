@@ -2,6 +2,25 @@
 
 [문제 링크](https://www.acmicpc.net/problem/9020) 
 
+### 의사코드
+
+n 입력받음
+// n번 입력받는다
+for 1 ~ n-1:
+  num 입력받음
+  for j/2 ~ 2:     // 1은 제외
+    if (j는 소수) and (num-j는 소수):	// 차이가 적은 숫자 출력을 위해 거꾸로
+       print(j, num-j)
+       break           // 숫자를 찾으면 출력하고 더 돌지 않는다
+
+
+def is_prime_number(a):
+    for 2 ~ math.sqrt(a)+1    // 제곱근 포함 주의
+      if a % i == 0:   // 숫자와 i 가 나눠지면, false 반환
+        return False
+    return True
+
+
 ### 성능 요약
 
 메모리: 33240 KB, 시간: 160 ms
