@@ -1,5 +1,8 @@
 # [Gold IV] N-Queen - 9663 
 
+### TODO
+시간 초과로 pypy3 로 제출하여 성공 -> Python3로 다시 풀어보기
+
 [문제 링크](https://www.acmicpc.net/problem/9663) 
 
 ### 성능 요약
