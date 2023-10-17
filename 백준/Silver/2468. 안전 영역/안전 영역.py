@@ -1,6 +1,7 @@
 import sys
 sys.setrecursionlimit(10**8)
 
+
 def safe_area(r, c, visited, no_water_area, h):
     global cnt
 
@@ -10,8 +11,7 @@ def safe_area(r, c, visited, no_water_area, h):
         safe_area(r, c - 1, visited, no_water_area, h)
         safe_area(r, c + 1, visited, no_water_area, h)
         safe_area(r + 1, c, visited, no_water_area, h)
-        # print(r, c, h, '탐색 끝', cnt)
-
+        
 
 cnt = 0
 global n
@@ -44,13 +44,8 @@ for i in range(max(map(max, height_list))):
             break
         for k in range(n):
             if no_water_area[j][k] == False and visited[j][k] == 0:
-                # print(j, k, '탐색함', i)
-                # print(visited)
                 safe_area(j, k, visited, no_water_area, i)
-                # print(no_water_area)
-                # print(visited)
                 cnt += 1
-        # print(cnt)
         if cnt > max_area_cnt:
             max_area_cnt = cnt
 
